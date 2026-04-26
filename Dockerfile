@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Elimina configuración por defecto ( opcional pero recomendable)
-RUN rm -rf /usr/share/nginx/html*
+RUN rm -rf /usr/share/nginx/html/*
 
 # Copia tu sito HTML al contenedor
 COPY . /usr/share/nginx/html
